@@ -15,12 +15,12 @@ public class EmployeeService {
         return repo.save(employeeModel);
     }
 
-    public List<EmployeeModel> listEmployees() {
-        return repo.findAll();
-    }
-
     public List<EmployeeModel> addEmployees(List<EmployeeModel> employeeModels) {
         return repo.saveAll(employeeModels);
+    }
+
+    public List<EmployeeModel> listEmployees() {
+        return repo.findAll();
     }
 
     public EmployeeModel getEmployee(int id) {
